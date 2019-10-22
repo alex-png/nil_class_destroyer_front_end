@@ -48,25 +48,25 @@ document.addEventListener('DOMContentLoaded', function(event){
                 for (j=0; j<4; j++){
                     // let targetTile = document.querySelector('.box').dataset.tileNumber[j]
                     gameBoard.insertAdjacentHTML('beforeend', `
-                    <div class="box"><img src=${shooterTileArray[j].image_url} class ="pictures" data-row="A" data-tileNumber=${j+1}></div>
+                    <div id=${j+1} class="box"><img src=${shooterTileArray[j].image_url} class ="pictures" data-row="A"></div>
                     `)
                 }//end of j for
 
                 for (k=4; k<8; k++){
                     // let targetTile = document.querySelector('.box').dataset.tileNumber[j]
                     gameBoard.insertAdjacentHTML('beforeend', `
-                    <div class="box"><img src=${shooterTileArray[k].image_url} class ="pictures" data-row="B" tileNumber=${k+1}></div>
+                    <div id=${k+1} class="box"><img src=${shooterTileArray[k].image_url} class ="pictures" data-row="B"></div>
                     `)
                 }//end of k for
                 
                 for(l=8; l<12; l++){
                     gameBoard.insertAdjacentHTML('beforeend', `
-                    <div class="box" data-row="C" data-tileNumber=${l+1}>
+                    <div id=${l+1} class="box" data-row="C">
                     `)
                 }//end of l for
                 for(m=12; m<16; m++){
                     gameBoard.insertAdjacentHTML('beforeend', `
-                    <div class="box" data-row="D" data-tileNumber=${m+1}>
+                    <div id=${m+1} class="box" data-row="D">
                     `)
                 }//end of m for
                 
